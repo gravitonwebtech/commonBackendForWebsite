@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'joyoMoneyLoan',
+    'corsheaders',
+    'edufusion',
 ]
 
 MIDDLEWARE = [
@@ -68,7 +71,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'commonBackendForWebsite.wsgi.application'
-
+CORS_ALLOW_ALL_ORIGINS = True
+ 
+CORS_ALLOW_CREDENTIALS = True
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
